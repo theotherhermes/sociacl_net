@@ -1,0 +1,11 @@
+.nav{
+    grid-area: n;
+    background-color: #ff0;
+    margin-right: 5px;
+}
+.nav div a{
+    text-decoration: none;
+}
+.nav div{
+    margin: 10px;
+}
