@@ -4,7 +4,8 @@ import classes from './Post.module.css';
 const Post = (props) => {
     return (
       <div>
-        {props.message}
+        <div>{props.message}</div>
+        <div>{props.likesCount}</div>
       </div>
     )
 };
