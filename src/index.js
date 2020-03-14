@@ -7,17 +7,11 @@ import {BrowserRouter} from 'react-router-dom';
 import store from "./redux/redux-store";
 import {Provider} from "react-redux";
 
-let renderTree = (state) => {
-    ReactDOM.render(
+ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
             <App/>
         </Provider>
     </BrowserRouter>, document.getElementById('root'));
-};
-renderTree(store.getState());
-store.subscribe(() => {
-    let state = store.getState();
-    renderTree(state);
-})
+
 serviceWorker.unregister();
